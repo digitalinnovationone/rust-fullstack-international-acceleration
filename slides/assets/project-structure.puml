@@ -1,0 +1,32 @@
+@startuml project-structure
+
+database Postgres
+
+package Backend {
+    [Repository]
+
+    [DTO]
+
+    [API]
+
+    [API] <-left-> [DTO] : Transforms payloads from/to
+    [API] <-down- [Repository] : Fetches data
+    [API] -> [Repository] : Submits data
+}
+
+package Frontend {
+    [Pages]
+
+    [Services]
+
+    [Pages] <-left- [Services] : Fetches data
+    [Pages] -left-> [Services] : Posts data
+}
+
+actor User
+
+User <-up-> [Pages] : Interacts with
+[Services] -> [API] : Makes requests
+[Repository] <-down-> [Postgres] : Fetches/submits data
+
+@enduml
