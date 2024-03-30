@@ -1,0 +1,2 @@
+[default.databases.api]
+url = "postgresql://api:api@localhost:5432/api"

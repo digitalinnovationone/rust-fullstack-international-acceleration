@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:14
+    ports:
+      - 5432:5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=api
+      - POSTGRES_PASSWORD=api
+      - POSTGRES_DB=api
+
+volumes:
+  pgdata:
+
+networks:
+  private:
+  public:
