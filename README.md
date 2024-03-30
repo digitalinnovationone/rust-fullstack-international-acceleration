@@ -2,7 +2,7 @@
 
 This international acceleration has been presented live and can be acessed via this link: https://web.dio.me/acceleration/aceleracao-internacional-rust-full-stack-development/
 
-![Demo video of the project's frontend](./readme/demo.mp4)
+![](./readme/demo.gif)
 
 ## About
 
