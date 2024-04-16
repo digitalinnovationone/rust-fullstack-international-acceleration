@@ -94,3 +94,6 @@ diesel migration generate
     "desired_migration_name" # Substitute for a short description of what your migration does 
 ```
 
+## VOD
+
+In the [VOD](https://web.dio.me/acceleration/aceleracao-internacional-rust-full-stack-development/), a pastebin link is mentioned. The content that was included in it is now available in [this file](./readme/pastebin-content.md)
